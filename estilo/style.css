@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, 
+button,
+input,
+select
+textarea{
+  font-family: "Heebo", sans-serif;
+}
+
+body{
+  background-color: #f7f7f7;
+  
+}
+
+header{
+  background-color: #fff;
+  height: 80px;
+}
+
+header #navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header #navbar .nav-brand{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700px;
+  color: gray;
+}
+
+header #navbar .nav-list{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500px;
+}
+ .nav-item a:hover{
+  color: #afa7a7;
+  transition: 0.4s;
+ }
+
+ main{
+  margin-top: 6rem;
+ }
+
+ main #banner{
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+ }
+
+@media (max-width:920px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  .banner-content{
+    text-align: center;
+  }
+}
+ main .banner-content-title{
+  font-size: 44px;
+  font-weight: 700px;
+  line-height: 60px;
+  margin-bottom: 40px;
+ }
+ main .banner-content-subtitle{
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  max-width: 500px;
+  margin-bottom: 38px;
+ }
+
+ .banner-btn{
+  background-color: #00a8cc;
+  color:white;
+  font-size: 20px;
+  font-weight: 500px;
+  border-radius: 2px;
+  padding: 8px 24px;
+  border: none;
+  
+}
+
+.banner-btn a{
+  text-decoration: none;
+}
+
+.banner-image{
+  border-radius: 50%;
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+ 
+}
+
+/*section posts*/
+
+#posts{
+  margin-top: 71px;
+  background-color: #b7ebf7;
+ 
+}
+
+.posts-content{
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.posts-content-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+  .section-title{
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .view-all-link{
+    text-decoration: none;
+    color: blue;
+  }
+
+  .posts-cards{
+    display: flex;
+    gap: 20px;
+  }
+
+.post-card{
+  background-color: white;
+  padding: 24px;
+  }
+
+  .post-card h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 37px;
+  }
+
+  .post-card span{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    display: block;
+  }
+  
+  @media (max-width:740px) {
+    .posts-cards {
+      flex-direction: column;
+    }
+  }
+
+
+
+
